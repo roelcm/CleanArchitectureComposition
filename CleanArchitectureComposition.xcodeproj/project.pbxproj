@@ -14,6 +14,11 @@
 		451D2B52294B8CBA005B6978 /* CleanArchitectureCompositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B51294B8CBA005B6978 /* CleanArchitectureCompositionTests.swift */; };
 		451D2B5C294B8CBA005B6978 /* CleanArchitectureCompositionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B5B294B8CBA005B6978 /* CleanArchitectureCompositionUITests.swift */; };
 		451D2B5E294B8CBA005B6978 /* CleanArchitectureCompositionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B5D294B8CBA005B6978 /* CleanArchitectureCompositionUITestsLaunchTests.swift */; };
+		451D2B6B294B8D75005B6978 /* LoginInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B6A294B8D75005B6978 /* LoginInUseCase.swift */; };
+		451D2B6D294B8DDB005B6978 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B6C294B8DDB005B6978 /* LoginPresenter.swift */; };
+		451D2B6F294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B6E294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift */; };
+		451D2B71294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B70294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift */; };
+		451D2B74294B907F005B6978 /* CompositionDelegateRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B72294B9062005B6978 /* CompositionDelegateRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		451D2B57294B8CBA005B6978 /* CleanArchitectureCompositionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureCompositionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		451D2B5B294B8CBA005B6978 /* CleanArchitectureCompositionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureCompositionUITests.swift; sourceTree = "<group>"; };
 		451D2B5D294B8CBA005B6978 /* CleanArchitectureCompositionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureCompositionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		451D2B6A294B8D75005B6978 /* LoginInUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInUseCase.swift; sourceTree = "<group>"; };
+		451D2B6C294B8DDB005B6978 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		451D2B6E294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsAnalyticsWrapper.swift; sourceTree = "<group>"; };
+		451D2B70294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposer.swift; sourceTree = "<group>"; };
+		451D2B72294B9062005B6978 /* CompositionDelegateRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionDelegateRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,11 @@
 				451D2B41294B8CB9005B6978 /* ContentView.swift */,
 				451D2B43294B8CBA005B6978 /* Assets.xcassets */,
 				451D2B45294B8CBA005B6978 /* CleanArchitectureComposition.entitlements */,
+				451D2B6A294B8D75005B6978 /* LoginInUseCase.swift */,
+				451D2B6C294B8DDB005B6978 /* LoginPresenter.swift */,
+				451D2B6E294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift */,
+				451D2B70294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift */,
+				451D2B72294B9062005B6978 /* CompositionDelegateRecorder.swift */,
 				451D2B46294B8CBA005B6978 /* Preview Content */,
 			);
 			path = CleanArchitectureComposition;
@@ -259,8 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451D2B6D294B8DDB005B6978 /* LoginPresenter.swift in Sources */,
+				451D2B71294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift in Sources */,
+				451D2B6B294B8D75005B6978 /* LoginInUseCase.swift in Sources */,
+				451D2B74294B907F005B6978 /* CompositionDelegateRecorder.swift in Sources */,
 				451D2B42294B8CB9005B6978 /* ContentView.swift in Sources */,
 				451D2B40294B8CB9005B6978 /* CleanArchitectureCompositionApp.swift in Sources */,
+				451D2B6F294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
