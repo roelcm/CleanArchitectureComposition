@@ -14,9 +14,9 @@ protocol LoginUseCaseOutput {
 
 final class LoginUseCase {
     
-    private var composer: LoginUseCaseOutput
+    let composer: LoginUseCaseOutputComposer
     
-    init(composer: LoginUseCaseOutput) {
+    init(composer: LoginUseCaseOutputComposer) {
         self.composer = composer
     }
     

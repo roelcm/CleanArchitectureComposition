@@ -18,6 +18,9 @@
 		451D2B6D294B8DDB005B6978 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B6C294B8DDB005B6978 /* LoginPresenter.swift */; };
 		451D2B6F294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B6E294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift */; };
 		451D2B71294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B70294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift */; };
+		451D2B76294B95A5005B6978 /* LoginUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B75294B95A5005B6978 /* LoginUseCaseFactory.swift */; };
+		451D2B78294B961C005B6978 /* FirebaseAnalyticsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B77294B961C005B6978 /* FirebaseAnalyticsWrapper.swift */; };
+		451D2B7C294B9683005B6978 /* LoginUseCaseFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B7B294B9683005B6978 /* LoginUseCaseFactoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		451D2B6C294B8DDB005B6978 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		451D2B6E294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsAnalyticsWrapper.swift; sourceTree = "<group>"; };
 		451D2B70294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposer.swift; sourceTree = "<group>"; };
+		451D2B75294B95A5005B6978 /* LoginUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseFactory.swift; sourceTree = "<group>"; };
+		451D2B77294B961C005B6978 /* FirebaseAnalyticsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsWrapper.swift; sourceTree = "<group>"; };
+		451D2B7B294B9683005B6978 /* LoginUseCaseFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseFactoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +109,14 @@
 		451D2B3E294B8CB9005B6978 /* CleanArchitectureComposition */ = {
 			isa = PBXGroup;
 			children = (
+				451D2B80294B9927005B6978 /* Main */,
+				451D2B7F294B9906005B6978 /* Analytics */,
+				451D2B7E294B98FA005B6978 /* UI */,
+				451D2B7D294B98ED005B6978 /* BusinessLogic */,
 				451D2B3F294B8CB9005B6978 /* CleanArchitectureCompositionApp.swift */,
 				451D2B41294B8CB9005B6978 /* ContentView.swift */,
 				451D2B43294B8CBA005B6978 /* Assets.xcassets */,
 				451D2B45294B8CBA005B6978 /* CleanArchitectureComposition.entitlements */,
-				451D2B6A294B8D75005B6978 /* LoginInUseCase.swift */,
-				451D2B6C294B8DDB005B6978 /* LoginPresenter.swift */,
-				451D2B6E294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift */,
-				451D2B70294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift */,
 				451D2B46294B8CBA005B6978 /* Preview Content */,
 			);
 			path = CleanArchitectureComposition;
@@ -127,7 +133,7 @@
 		451D2B50294B8CBA005B6978 /* CleanArchitectureCompositionTests */ = {
 			isa = PBXGroup;
 			children = (
-				451D2B51294B8CBA005B6978 /* CleanArchitectureCompositionTests.swift */,
+				451D2B81294B9935005B6978 /* Main */,
 			);
 			path = CleanArchitectureCompositionTests;
 			sourceTree = "<group>";
@@ -139,6 +145,49 @@
 				451D2B5D294B8CBA005B6978 /* CleanArchitectureCompositionUITestsLaunchTests.swift */,
 			);
 			path = CleanArchitectureCompositionUITests;
+			sourceTree = "<group>";
+		};
+		451D2B7D294B98ED005B6978 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				451D2B6A294B8D75005B6978 /* LoginInUseCase.swift */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		451D2B7E294B98FA005B6978 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				451D2B6C294B8DDB005B6978 /* LoginPresenter.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		451D2B7F294B9906005B6978 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				451D2B77294B961C005B6978 /* FirebaseAnalyticsWrapper.swift */,
+				451D2B6E294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		451D2B80294B9927005B6978 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				451D2B70294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift */,
+				451D2B75294B95A5005B6978 /* LoginUseCaseFactory.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		451D2B81294B9935005B6978 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				451D2B51294B8CBA005B6978 /* CleanArchitectureCompositionTests.swift */,
+				451D2B7B294B9683005B6978 /* LoginUseCaseFactoryTests.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +261,7 @@
 					};
 					451D2B4C294B8CBA005B6978 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = 451D2B3B294B8CB9005B6978;
 					};
 					451D2B56294B8CBA005B6978 = {
@@ -273,6 +323,8 @@
 			files = (
 				451D2B6D294B8DDB005B6978 /* LoginPresenter.swift in Sources */,
 				451D2B71294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift in Sources */,
+				451D2B76294B95A5005B6978 /* LoginUseCaseFactory.swift in Sources */,
+				451D2B78294B961C005B6978 /* FirebaseAnalyticsWrapper.swift in Sources */,
 				451D2B6B294B8D75005B6978 /* LoginInUseCase.swift in Sources */,
 				451D2B42294B8CB9005B6978 /* ContentView.swift in Sources */,
 				451D2B40294B8CB9005B6978 /* CleanArchitectureCompositionApp.swift in Sources */,
@@ -284,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451D2B7C294B9683005B6978 /* LoginUseCaseFactoryTests.swift in Sources */,
 				451D2B52294B8CBA005B6978 /* CleanArchitectureCompositionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,10 +552,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = rcm.CleanArchitectureCompositionTests;
@@ -510,6 +569,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanArchitectureComposition.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CleanArchitectureComposition";
@@ -521,10 +581,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = rcm.CleanArchitectureCompositionTests;

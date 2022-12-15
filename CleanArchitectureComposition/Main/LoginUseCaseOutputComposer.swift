@@ -9,7 +9,7 @@ import Foundation
 
 final class LoginUseCaseOutputComposer: LoginUseCaseOutput {
     
-    private let outputs: [LoginUseCaseOutput]
+    let outputs: [LoginUseCaseOutput]
     
     init(delegates: [LoginUseCaseOutput]) {
         self.outputs = delegates
