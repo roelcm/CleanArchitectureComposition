@@ -31,25 +31,38 @@ final class CleanArchitectureCompositionTests: XCTestCase {
     }
 
     func test_oneComposer_doesNotCrash() throws {
-        let testDelegate = CompositionDelegateRecorder()
+        let testDelegate = LoginUseCaseOutputSpy()
         let composer = LoginUseCaseOutputComposer(delegates: [testDelegate])
         let loginUseCase = LoginUseCase(composer: composer)
         loginUseCase.login(name: "user", pwd: "pwd")
         
-        assert(testDelegate.succeededCount == 1)
+        XCTAssertEqual(testDelegate.succeededCount, 1)
     }
 
     func test_multipleComposers_doesNotCrash() throws {
-        let testDelegate1 = CompositionDelegateRecorder()
-        let testDelegate2 = CompositionDelegateRecorder()
-        let testDelegate3 = CompositionDelegateRecorder()
+        let testDelegate1 = LoginUseCaseOutputSpy()
+        let testDelegate2 = LoginUseCaseOutputSpy()
+        let testDelegate3 = LoginUseCaseOutputSpy()
         let composer = LoginUseCaseOutputComposer(delegates: [testDelegate1, testDelegate2, testDelegate3])
         let loginUseCase = LoginUseCase(composer: composer)
         loginUseCase.login(name: "user", pwd: "pwd")
         
-        assert(testDelegate1.succeededCount == 1)
-        assert(testDelegate2.succeededCount == 1)
-        assert(testDelegate3.succeededCount == 1)
+        XCTAssertEqual(testDelegate1.succeededCount, 1)
+        XCTAssertEqual(testDelegate2.succeededCount, 1)
+        XCTAssertEqual(testDelegate3.succeededCount, 1)
     }
 
+    private class LoginUseCaseOutputSpy: LoginUseCaseOutput {
+        var succeededCount: Int = 0
+        var failedCount: Int = 0
+        
+        func loginFailed() {
+            failedCount += 1
+        }
+        
+        func loginSuceeded() {
+            succeededCount += 1
+        }
+    }
+    
 }

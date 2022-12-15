@@ -18,7 +18,6 @@
 		451D2B6D294B8DDB005B6978 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B6C294B8DDB005B6978 /* LoginPresenter.swift */; };
 		451D2B6F294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B6E294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift */; };
 		451D2B71294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B70294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift */; };
-		451D2B74294B907F005B6978 /* CompositionDelegateRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2B72294B9062005B6978 /* CompositionDelegateRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		451D2B6C294B8DDB005B6978 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		451D2B6E294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsAnalyticsWrapper.swift; sourceTree = "<group>"; };
 		451D2B70294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposer.swift; sourceTree = "<group>"; };
-		451D2B72294B9062005B6978 /* CompositionDelegateRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionDelegateRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +111,6 @@
 				451D2B6C294B8DDB005B6978 /* LoginPresenter.swift */,
 				451D2B6E294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift */,
 				451D2B70294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift */,
-				451D2B72294B9062005B6978 /* CompositionDelegateRecorder.swift */,
 				451D2B46294B8CBA005B6978 /* Preview Content */,
 			);
 			path = CleanArchitectureComposition;
@@ -277,7 +274,6 @@
 				451D2B6D294B8DDB005B6978 /* LoginPresenter.swift in Sources */,
 				451D2B71294B8EA9005B6978 /* LoginUseCaseOutputComposer.swift in Sources */,
 				451D2B6B294B8D75005B6978 /* LoginInUseCase.swift in Sources */,
-				451D2B74294B907F005B6978 /* CompositionDelegateRecorder.swift in Sources */,
 				451D2B42294B8CB9005B6978 /* ContentView.swift in Sources */,
 				451D2B40294B8CB9005B6978 /* CleanArchitectureCompositionApp.swift in Sources */,
 				451D2B6F294B8E3C005B6978 /* CrashlyticsAnalyticsWrapper.swift in Sources */,

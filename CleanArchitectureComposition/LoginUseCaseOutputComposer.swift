@@ -9,22 +9,18 @@ import Foundation
 
 final class LoginUseCaseOutputComposer: LoginUseCaseOutput {
     
-    private var outputs: [LoginUseCaseOutput]
+    private let outputs: [LoginUseCaseOutput]
     
     init(delegates: [LoginUseCaseOutput]) {
         self.outputs = delegates
     }
     
     func loginSuceeded() {
-        for output in outputs {
-            output.loginSuceeded()
-        }
+        outputs.forEach { $0.loginSuceeded() }
     }
     
     func loginFailed() {
-        for output in outputs {
-            output.loginFailed()
-        }
+        outputs.forEach { $0.loginFailed() }
     }
     
 }
